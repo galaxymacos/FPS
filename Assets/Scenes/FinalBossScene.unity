@@ -3201,16 +3201,6 @@ Prefab:
       propertyPath: bulletCapacity
       value: 
       objectReference: {fileID: 1354492137}
-    - target: {fileID: 114632053614210684, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: hpBar
-      value: 
-      objectReference: {fileID: 238866695}
-    - target: {fileID: 114632053614210684, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: GameoverScreen
-      value: 
-      objectReference: {fileID: 140787173}
     - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
         type: 2}
       propertyPath: hpBar
@@ -3226,26 +3216,6 @@ Prefab:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 665876429}
-    - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: DeathSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 38b2daa8215910d4c967fc29f4158c09, type: 3}
-    - target: {fileID: 114672796031504120, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: reloadTime
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114978209877270156, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: reloadTime
-      value: 2.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114430313944293304, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: reloadTime
-      value: 3.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbde25794923f7741b799f6abf9a6751, type: 2}
   m_IsPrefabAsset: 0
@@ -4891,23 +4861,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1682404560}
   m_CullTransparentMesh: 0
---- !u!1 &1694547700 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1360821794741638, guid: dbde25794923f7741b799f6abf9a6751,
-    type: 2}
-  m_PrefabInternal: {fileID: 1085947630}
---- !u!114 &1694547707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1694547700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 791fab4de72ad094690084381c5795d9, type: 2}
 --- !u!1 &1717239169
 GameObject:
   m_ObjectHideFlags: 0

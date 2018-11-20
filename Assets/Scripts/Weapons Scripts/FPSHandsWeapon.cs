@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class FPSHandsWeapon : MonoBehaviour {
 
-	public AudioClip shootClip, reloadClip;
+    public AudioClip shootClip;
+    [SerializeField] internal AudioClip clipOutClip;
+    [SerializeField] internal AudioClip clipInClip;
 	private AudioSource audioManager;
 	private GameObject muzzleFlash;
 
@@ -45,9 +47,13 @@ public class FPSHandsWeapon : MonoBehaviour {
 	}
 
 	IEnumerator PlayReloadSound() {
-		yield return new WaitForSeconds(0.8f);
-		if (audioManager.clip != reloadClip) {
-			audioManager.clip = reloadClip;
+        if (audioManager.clip != clipOutClip) {
+            audioManager.clip = clipOutClip;
+        }
+        audioManager.Play();
+		yield return new WaitForSeconds(1.5f);
+		if (audioManager.clip != clipInClip) {
+			audioManager.clip = clipInClip;
 		}
 //        print("audio played");
 		audioManager.Play();

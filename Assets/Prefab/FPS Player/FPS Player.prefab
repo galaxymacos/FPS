@@ -1643,6 +1643,7 @@ GameObject:
   - component: {fileID: 114274094506351388}
   - component: {fileID: 114100611116018608}
   - component: {fileID: 114312835999449302}
+  - component: {fileID: 114900732774275532}
   m_Layer: 0
   m_Name: FPS Camera
   m_TagString: Untagged
@@ -9381,7 +9382,7 @@ MonoBehaviour:
   maxHp: 200
   hpBar: {fileID: 0}
   GameoverScreen: {fileID: 0}
-  DeathSound: {fileID: 0}
+  DeathSound: {fileID: 8300000, guid: 38b2daa8215910d4c967fc29f4158c09, type: 3}
   DieFallOverSpeed: 200
   spawnPoint: {fileID: 0}
 --- !u!114 &114137346930516374
@@ -9397,6 +9398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: 93f9c3363bf680b46b725c07791f988a, type: 3}
   reloadClip: {fileID: 8300000, guid: a2eeccbe4afb5b342a8b6e440b9d6529, type: 3}
+  clipOutClip: {fileID: 8300000, guid: 0af0ffdf4a4735548b18d796fabdaf25, type: 3}
+  clipInClip: {fileID: 8300000, guid: a2eeccbe4afb5b342a8b6e440b9d6529, type: 3}
 --- !u!114 &114177551677751920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9423,6 +9426,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: 8077d84082459fd4ba579dda0e473e20, type: 3}
   reloadClip: {fileID: 8300000, guid: 9e3c5f6b64bc3e74e8ac3e0dcb40a5f0, type: 3}
+  clipOutClip: {fileID: 8300000, guid: 9e3c5f6b64bc3e74e8ac3e0dcb40a5f0, type: 3}
+  clipInClip: {fileID: 8300000, guid: 328afefd1c0aa584ea19cbc342dee25e, type: 3}
 --- !u!114 &114274094506351388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9476,6 +9481,7 @@ MonoBehaviour:
   fireRate: 15
   bulletLeft: 0
   bulletCapacity: 700
+  reloadTime: 3.5
 --- !u!114 &114461690747869562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9515,6 +9521,7 @@ MonoBehaviour:
   fireRate: 3
   bulletLeft: 0
   bulletCapacity: 360
+  reloadTime: 1.8
 --- !u!114 &114748527332448014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9555,6 +9562,18 @@ MonoBehaviour:
     type: 2}
   animControllerMachineGun: {fileID: 9100000, guid: 0770a54f266a24bc7b5bd0ee2d2b4f0a,
     type: 2}
+--- !u!114 &114900732774275532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1360821794741638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 791fab4de72ad094690084381c5795d9, type: 2}
 --- !u!114 &114945133714841094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9568,6 +9587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: fde722301da517f429eaec7a286baea1, type: 3}
   reloadClip: {fileID: 8300000, guid: dd37bc8e9362aae4fba8007a3287374d, type: 3}
+  clipOutClip: {fileID: 8300000, guid: 98fa4c1ec6690484d90f0458a47577e7, type: 3}
+  clipInClip: {fileID: 8300000, guid: dd37bc8e9362aae4fba8007a3287374d, type: 3}
 --- !u!114 &114978209877270156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9584,6 +9605,7 @@ MonoBehaviour:
   fireRate: 10
   bulletLeft: 0
   bulletCapacity: 480
+  reloadTime: 2.8
 --- !u!136 &136798751920790020
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -19,11 +19,11 @@ public class FPSShootingControls : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         Shoot();
+        
     }
 
     private void Shoot() {
         if (FpsController.currentWeapon.bulletLeft <= 0) {
-            FpsController.bulletLeftText.color = Color.red;
         }
         else {
             if ((FpsController.currentWeapon.name == "deagle"
