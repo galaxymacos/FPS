@@ -8,6 +8,7 @@ TagManager:
   - Board
   - Trophy
   - Enemy
+  - Weakness
   layers:
   - Default
   - TransparentFX
