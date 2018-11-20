@@ -26,7 +26,6 @@ public class SpawnPoint : MonoBehaviour {
 			spawnTimeRemain = spawnInterval;
 			int random = Random.Range(0, SpawnPoints.Length - 1);
 			_audioSource.Play();
-			print("music is played");
 			GameObject robot = Instantiate(objectToSpawn, SpawnPoints[random].transform.position, Quaternion.identity);
 			robot.GetComponent<EnemyBehaviour>().player = GameObject.Find("FPS Player");
 		}

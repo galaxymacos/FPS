@@ -50,6 +50,8 @@ public class FPSController : MonoBehaviour {
     [SerializeField] internal TextMeshProUGUI bulletLeftText;
     [SerializeField] internal TextMeshProUGUI bulletCapacity;
 
+    private AudioSource _audioSource;
+
     #region Weapon
 
     [SerializeField] private WeaponManager weaponManager;
@@ -64,6 +66,7 @@ public class FPSController : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        _audioSource = GetComponent<AudioSource>();
         firstPersonView = transform.Find("FPS View").transform;
         charController = GetComponent<CharacterController>();
         speed = walkSpeed;
@@ -110,6 +113,11 @@ public class FPSController : MonoBehaviour {
                 currentHandsWeapon = null;
                 handsWeaponManager.weapons[0].SetActive(true);
                 currentHandsWeapon = handsWeaponManager.weapons[0].GetComponent<FPSHandsWeapon>();
+                if (_audioSource.clip != currentHandsWeapon.drawClip) {
+                    _audioSource.clip = currentHandsWeapon.drawClip;
+                }
+
+                _audioSource.Play();
             }
 
             if (!weaponManager.weapons[0].activeInHierarchy) {
@@ -134,6 +142,11 @@ public class FPSController : MonoBehaviour {
                 handsWeaponManager.weapons[1].SetActive(true);
                 currentHandsWeapon = handsWeaponManager.weapons[1].GetComponent<FPSHandsWeapon>();
                 playerAnimation.ChangeController(false);
+                if (_audioSource.clip != currentHandsWeapon.drawClip) {
+                    _audioSource.clip = currentHandsWeapon.drawClip;
+                }
+
+                _audioSource.Play();
             }
 
             if (!weaponManager.weapons[1].activeInHierarchy) {
@@ -158,6 +171,11 @@ public class FPSController : MonoBehaviour {
                 handsWeaponManager.weapons[2].SetActive(true);
                 currentHandsWeapon = handsWeaponManager.weapons[2].GetComponent<FPSHandsWeapon>();
                 playerAnimation.ChangeController(false);
+                if (_audioSource.clip != currentHandsWeapon.drawClip) {
+                    _audioSource.clip = currentHandsWeapon.drawClip;
+                }
+
+                _audioSource.Play();
             }
 
             if (!weaponManager.weapons[2].activeInHierarchy) {
@@ -264,23 +282,20 @@ public class FPSController : MonoBehaviour {
             if (!isReloading) {
                 isReloading = true;
                 reloadTimeRemain = currentWeapon.reloadTime;
-                if (currentWeapon.bulletCapacity >= currentWeapon.cartridge - currentWeapon.bulletLeft)
-                {
+                if (currentWeapon.bulletCapacity >= currentWeapon.cartridge - currentWeapon.bulletLeft) {
                     currentWeapon.bulletCapacity -= currentWeapon.cartridge - currentWeapon.bulletLeft;
                     currentWeapon.bulletLeft = currentWeapon.cartridge;
-
                 }
-                else if (currentWeapon.bulletCapacity > 0)
-                {
+                else if (currentWeapon.bulletCapacity > 0) {
                     currentWeapon.bulletLeft = currentWeapon.bulletCapacity;
                 }
-                else
-                {
+                else {
                     print("Ammo empty");
                 }
+
                 playerAnimation.ReloadGun();
                 currentHandsWeapon.Reload();
-            } 
+            }
         }
 
         #endregion

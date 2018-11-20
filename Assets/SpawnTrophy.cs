@@ -20,7 +20,7 @@ public class SpawnTrophy : MonoBehaviour {
 		timeRemainToSpawn -= Time.deltaTime;
 		if (timeRemainToSpawn <= 0) {
 			timeRemainToSpawn = spawnTrophyInterval;
-			Instantiate(trophies[Random.Range(0, trophies.Length)],Spawners[Random.Range(0,Spawners.Length)].transform.position,Quaternion.identity);
+			Instantiate(trophies[Random.Range(0, trophies.Length)],Spawners[Random.Range(0,Spawners.Length)].transform.position+new Vector3(0,2,0),Quaternion.identity);
 		}
 	}
 }

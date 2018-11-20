@@ -47,6 +47,10 @@ public class FPSShootingControls : MonoBehaviour {
                         }
                     }
 
+                    if (hitObject.CompareTag("Trophy")) {
+                        hitObject.GetComponent<TrophyBehavior>().PlayTrophy();
+                    }
+
                     var targetScript = hit.transform.gameObject.GetComponent<EnemyTarget>();
                     if (targetScript != null) {
                         targetScript.TakeDamage(FpsController.currentWeapon.damage);

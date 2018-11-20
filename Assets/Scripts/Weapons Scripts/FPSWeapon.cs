@@ -9,6 +9,7 @@ public class FPSWeapon : MonoBehaviour {
 	[SerializeField] internal float fireRate;
 	public int bulletLeft;
 	private GameObject muzzleFlash;
+	internal int maxBulletCapacity;
 	[SerializeField] internal int bulletCapacity;
     [SerializeField] internal float reloadTime;
 
@@ -21,6 +22,7 @@ public class FPSWeapon : MonoBehaviour {
 	}
 
 	private void Start() {
+		maxBulletCapacity = bulletCapacity;
 	}
 
 	public void Shoot() {

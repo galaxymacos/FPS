@@ -5443,7 +5443,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1904693071216456}
-  m_LocalRotation: {x: -3.110493e-11, y: -0.041524928, z: 0.17003767, w: 0.9845623}
+  m_LocalRotation: {x: -3.1104935e-11, y: -0.041524928, z: 0.17003769, w: 0.9845623}
   m_LocalPosition: {x: -0.04632725, y: 3.4106052e-16, z: 4.263257e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6280,7 +6280,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1675453378936802}
-  m_LocalRotation: {x: 3.110493e-11, y: 0.041524928, z: 0.17003767, w: 0.9845623}
+  m_LocalRotation: {x: 3.1104935e-11, y: 0.041524928, z: 0.17003769, w: 0.9845623}
   m_LocalPosition: {x: -0.04632725, y: 3.4106052e-16, z: -8.526512e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -9397,9 +9397,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: 93f9c3363bf680b46b725c07791f988a, type: 3}
-  reloadClip: {fileID: 8300000, guid: a2eeccbe4afb5b342a8b6e440b9d6529, type: 3}
   clipOutClip: {fileID: 8300000, guid: 0af0ffdf4a4735548b18d796fabdaf25, type: 3}
   clipInClip: {fileID: 8300000, guid: a2eeccbe4afb5b342a8b6e440b9d6529, type: 3}
+  drawClip: {fileID: 8300000, guid: 0090a339d7a128d4aa0f7d0d48abcf2f, type: 3}
 --- !u!114 &114177551677751920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9425,9 +9425,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: 8077d84082459fd4ba579dda0e473e20, type: 3}
-  reloadClip: {fileID: 8300000, guid: 9e3c5f6b64bc3e74e8ac3e0dcb40a5f0, type: 3}
   clipOutClip: {fileID: 8300000, guid: 9e3c5f6b64bc3e74e8ac3e0dcb40a5f0, type: 3}
   clipInClip: {fileID: 8300000, guid: 328afefd1c0aa584ea19cbc342dee25e, type: 3}
+  drawClip: {fileID: 8300000, guid: 8f40913aad66c184e8e1be195cc87b36, type: 3}
 --- !u!114 &114274094506351388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9586,9 +9586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootClip: {fileID: 8300000, guid: fde722301da517f429eaec7a286baea1, type: 3}
-  reloadClip: {fileID: 8300000, guid: dd37bc8e9362aae4fba8007a3287374d, type: 3}
   clipOutClip: {fileID: 8300000, guid: 98fa4c1ec6690484d90f0458a47577e7, type: 3}
   clipInClip: {fileID: 8300000, guid: dd37bc8e9362aae4fba8007a3287374d, type: 3}
+  drawClip: {fileID: 8300000, guid: 542d509fc280ad54a87b21b1df997e70, type: 3}
 --- !u!114 &114978209877270156
 MonoBehaviour:
   m_ObjectHideFlags: 1

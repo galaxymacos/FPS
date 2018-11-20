@@ -7,6 +7,7 @@ public class FPSHandsWeapon : MonoBehaviour {
     public AudioClip shootClip;
     [SerializeField] internal AudioClip clipOutClip;
     [SerializeField] internal AudioClip clipInClip;
+    [SerializeField] internal AudioClip drawClip;
 	private AudioSource audioManager;
 	private GameObject muzzleFlash;
 

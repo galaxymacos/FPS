@@ -9,6 +9,7 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AutoRotate.cs" t="Include" />
         <e p="Bakery" t="Include">
           <e p="BakeryDirectLight.cs" t="Include" />
           <e p="BakeryLightmapGroup.cs" t="Include" />
@@ -51,6 +52,8 @@
             </e>
           </e>
         </e>
+        <e p="BossInformation.cs" t="Include" />
+        <e p="BossMove.cs" t="Include" />
         <e p="Editor" t="Include">
           <e p="PackageManagerAssembly" t="Include">
             <e p="PackageImportList.txt" t="Include" />
@@ -333,7 +336,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AddBulletTrophy.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="CharacterTarget.cs" t="Include" />
           <e p="Cursor Controller" t="Include">
@@ -356,7 +358,6 @@
           </e>
           <e p="GameOverMenu.cs" t="Include" />
           <e p="Grenade.cs" t="Include" />
-          <e p="HealingBehavior.cs" t="Include" />
           <e p="Weapons Scripts" t="Include">
             <e p="FPSHandsWeapon.cs" t="Include" />
             <e p="FPSWeapon.cs" t="Include" />
@@ -665,6 +666,7 @@
             <e p="Readme.cs" t="Include" />
           </e>
         </e>
+        <e p="WeaknessBreak.cs" t="Include" />
         <e p="Western Props" t="Include">
           <e p="Scripts" t="Include">
             <e p="Destructible.cs" t="Include" />

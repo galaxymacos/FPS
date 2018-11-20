@@ -50,25 +50,33 @@ public class Target : MonoBehaviour {
         hpBar.text = "HP:0";
 		isDead = true;
 		if (gameObject.name == "FPS Player") {
-			_audioSource.Play();
-            spawnPoint.enabled = false;
-			GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-			foreach (var enemy in enemies) {
-				Destroy(enemy);
+			if (_audioSource.clip != DeathSound) {
+				_audioSource.clip = DeathSound;
 			}
-			
-			foreach (var currentScript in GetComponentsInChildren<MonoBehaviour>()) {
-                if (currentScript.GetType().Name != "Target") {
-                    currentScript.enabled = false;
-                }
-            }
-			GetComponent<CharacterController>().enabled = false;
-			GetComponent<Animator>().enabled = false;
-			StartCoroutine(ShowGameoverScreen());
+			_audioSource.Play();
+            DisableAllAnimationAndScriptWhenGameOver();
+            StartCoroutine(ShowGameoverScreen());
 		}
 		else {
 			Destroy(gameObject);
 		}
+	}
+
+	private void DisableAllAnimationAndScriptWhenGameOver() {
+		spawnPoint.enabled = false;
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+		foreach (var enemy in enemies) {
+			Destroy(enemy);
+		}
+
+		foreach (var currentScript in GetComponentsInChildren<MonoBehaviour>()) {
+			if (currentScript.GetType().Name != "Target") {
+				currentScript.enabled = false;
+			}
+		}
+
+		GetComponent<CharacterController>().enabled = false;
+		GetComponent<Animator>().enabled = false;
 	}
 
 	IEnumerator ShowGameoverScreen() {

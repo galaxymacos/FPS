@@ -6,13 +6,14 @@ using UnityEngine;
 public class EnemyTarget : MonoBehaviour {
     [SerializeField] private GameObject flameEffect;
     [SerializeField] private GameObject dustExplosionEffect;
-
+    private AudioSource _audioSource;
     [SerializeField] private float hp = 200f;
 
     private Material mat;
 
     void Start() {
         mat = GetComponent<Renderer>().material;
+        _audioSource = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update() {
@@ -23,6 +24,7 @@ public class EnemyTarget : MonoBehaviour {
     }
 
     public void TakeDamage(float damage) {
+        _audioSource.Play();
         StartCoroutine(TurnRedAnimation());
         hp -= damage;
         if (hp <= 0)
