@@ -105,6 +105,7 @@ public class FPSController : MonoBehaviour {
 
     private void SelectWeapon() {
         if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            isReloading = false; // instant refresh the cooldown of gun
             if (!handsWeaponManager.weapons[0].activeInHierarchy) {
                 for (int i = 0; i < handsWeaponManager.weapons.Length; i++) {
                     handsWeaponManager.weapons[i].SetActive(false);
@@ -133,6 +134,8 @@ public class FPSController : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2)) {
+            isReloading = false; // instant refresh the cooldown of gun
+
             if (!handsWeaponManager.weapons[1].activeInHierarchy) {
                 for (int i = 0; i < handsWeaponManager.weapons.Length; i++) {
                     handsWeaponManager.weapons[i].SetActive(false);
@@ -162,6 +165,8 @@ public class FPSController : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3)) {
+            isReloading = false; // instant refresh the cooldown of gun
+
             if (!handsWeaponManager.weapons[2].activeInHierarchy) {
                 for (int i = 0; i < handsWeaponManager.weapons.Length; i++) {
                     handsWeaponManager.weapons[i].SetActive(false);

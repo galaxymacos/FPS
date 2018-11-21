@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossInformation : MonoBehaviour {
-    private int weaknessNumber = 1; // TODO change back to 5
+    private int weaknessNumber = 5; // TODO change back to 5
 
     [SerializeField] private GameObject explosionPoint;
 
@@ -12,16 +12,26 @@ public class BossInformation : MonoBehaviour {
     [SerializeField] private float explosionRadius = 100f;
     [SerializeField] internal AudioSource backgroundMusic;
     [SerializeField] private AudioClip victoryMusic;
-    [SerializeField] private AudioClip victoryJingle;
     [SerializeField] private SpawnPoint SpawnPoint;
     [SerializeField] private GameObject VictoryBoard;
+    
+    [SerializeField] private GameObject metalBarSpawner;
+    [SerializeField] private GameObject metalBarAttack;
+    [SerializeField] private float metalBarAttackInterval = 15f;
+    private float metalBarCurrentTime;
 
-    // Use this for initialization
-    void Start() {
+    private void Start() {
+        metalBarCurrentTime = metalBarAttackInterval;
+
     }
 
-    // Update is called once per frame
-    void Update() {
+    private void Update() {
+        metalBarCurrentTime -= Time.deltaTime;
+        if (metalBarCurrentTime <= 0f) {
+            metalBarCurrentTime = metalBarAttackInterval;
+            InitiateMetalBarAttack();
+            print("summoning metal bar attack");
+        }
     }
 
     public void BreakWeakness() {
@@ -76,14 +86,9 @@ public class BossInformation : MonoBehaviour {
         foreach (var enemy in enemies) {
             Destroy(enemy);
         }
+    }
 
-//        foreach (var currentScript in FPSPlayer.GetComponentsInChildren<MonoBehaviour>()) {
-//            if (currentScript.GetType().Name != "Target") {
-//                currentScript.enabled = false;
-//            }
-//        }
-
-//        GetComponent<CharacterController>().enabled = false;
-//        GetComponent<Animator>().enabled = false;
+    public void InitiateMetalBarAttack() {
+        Instantiate(metalBarAttack, metalBarSpawner.transform.position, Quaternion.identity);
     }
 }

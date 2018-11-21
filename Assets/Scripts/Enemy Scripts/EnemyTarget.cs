@@ -24,6 +24,7 @@ public class EnemyTarget : MonoBehaviour {
     }
 
     public void TakeDamage(float damage) {
+        print("Hp: "+hp);
         _audioSource.Play();
         StartCoroutine(TurnRedAnimation());
         hp -= damage;
@@ -34,7 +35,7 @@ public class EnemyTarget : MonoBehaviour {
     IEnumerator TurnRedAnimation() {
         mat.color = Color.red;
         mat.SetColor("_EmissionColor",Color.red);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.01f);
         mat.color = Color.white;
         mat.SetColor("_EmissionColor",Color.yellow);
 

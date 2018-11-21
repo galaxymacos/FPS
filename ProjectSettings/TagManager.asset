@@ -22,11 +22,11 @@ TagManager:
   - Ground
   - Postprocessing
   - Board
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bot
+  - Crate
+  - Terrain
+  - Trick
+  - Player
   - 
   - 
   - 

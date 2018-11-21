@@ -33,6 +33,7 @@ public class FPSShootingControls : MonoBehaviour {
                 nextTimeToFire = Time.time + 1f / FpsController.currentWeapon.fireRate;
                 RaycastHit hit;
                 if (Physics.Raycast(mainCam.transform.position, mainCam.transform.forward, out hit)) {
+                    Debug.DrawRay(mainCam.transform.position, mainCam.transform.forward,Color.red,1);
                     Instantiate(concreteImpact, hit.point, Quaternion.LookRotation(hit.normal));
                     GameObject hitObject = hit.transform.gameObject;
                     if (hitObject.CompareTag("Board")) {

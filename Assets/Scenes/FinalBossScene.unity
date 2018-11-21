@@ -522,33 +522,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &76723440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: FinalBossScene_LMA4
-  m_EditorClassIdentifier: 
-  resolution: 512
-  bitmask: 1
-  id: 1
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &122683320
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +739,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &167873502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: FinalBossScene_LMA5
+  m_EditorClassIdentifier: 
+  resolution: 256
+  bitmask: 1
+  id: 2
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,8 +1129,8 @@ GameObject:
   - component: {fileID: 210387713}
   - component: {fileID: 210387712}
   - component: {fileID: 210387711}
-  - component: {fileID: 210387710}
   - component: {fileID: 210387716}
+  - component: {fileID: 210387710}
   m_Layer: 0
   m_Name: Target
   m_TagString: Weakness
@@ -1704,6 +1704,120 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 292239838}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &313386130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1360821794741638, guid: dbde25794923f7741b799f6abf9a6751,
+    type: 2}
+  m_PrefabInternal: {fileID: 1085947630}
+--- !u!114 &313386138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313386130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a928e1417dca5c4a914161f0c988712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomValue: 30
+  zoomSpeed: 5
+--- !u!1001 &375509072
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1702816038}
+    m_Modifications:
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114615075726453714, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884964454708212, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114794326219896808, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114879028386383834, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114674354005151404, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114996215497055552, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114896740356880982, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493681409676424, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114055645734183140, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114627746598173956, guid: 543d3bc47447ff84c8696bad4676d533,
+        type: 2}
+      propertyPath: lifeTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150458192383816, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 543d3bc47447ff84c8696bad4676d533, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &421062851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,6 +2506,33 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 520099436}
   m_CullTransparentMesh: 0
+--- !u!114 &559842429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: FinalBossScene_LM0
+  m_EditorClassIdentifier: 
+  resolution: 4096
+  bitmask: 1
+  id: 3
+  isImplicit: 1
+  area: 58147.68
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &560823687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,8 +2770,8 @@ GameObject:
   - component: {fileID: 590327763}
   - component: {fileID: 590327767}
   - component: {fileID: 590327768}
-  - component: {fileID: 590327764}
   - component: {fileID: 590327769}
+  - component: {fileID: 590327764}
   m_Layer: 0
   m_Name: Target
   m_TagString: Weakness
@@ -3557,6 +3698,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 662622071}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &663204904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: FinalBossScene_LMA2
+  m_EditorClassIdentifier: 
+  resolution: 512
+  bitmask: 1
+  id: 5
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &665876429 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114939638385839182, guid: 9db88cb807abf84419e16981077793b2,
@@ -4028,20 +4196,20 @@ MonoBehaviour:
   lightUIDs: 
   lights: []
   implicitGroups:
-  - {fileID: 1623761644}
-  - {fileID: 1074209772}
-  - {fileID: 1369651228}
-  - {fileID: 1369651228}
-  - {fileID: 1369651228}
-  - {fileID: 1425539107}
-  - {fileID: 1113347686}
-  - {fileID: 76723440}
-  - {fileID: 1369651228}
-  - {fileID: 1369651228}
-  - {fileID: 1369651228}
-  - {fileID: 1369651228}
-  - {fileID: 1369651228}
-  - {fileID: 1369651228}
+  - {fileID: 559842429}
+  - {fileID: 663204904}
+  - {fileID: 1890334322}
+  - {fileID: 1890334322}
+  - {fileID: 1890334322}
+  - {fileID: 1731861510}
+  - {fileID: 167873502}
+  - {fileID: 1002276927}
+  - {fileID: 1890334322}
+  - {fileID: 1890334322}
+  - {fileID: 1890334322}
+  - {fileID: 1890334322}
+  - {fileID: 1890334322}
+  - {fileID: 1890334322}
   implicitGroupedObjects:
   - {fileID: 0}
   - {fileID: 122683320}
@@ -4343,8 +4511,8 @@ GameObject:
   - component: {fileID: 901019263}
   - component: {fileID: 901019267}
   - component: {fileID: 901019268}
-  - component: {fileID: 901019264}
   - component: {fileID: 901019269}
+  - component: {fileID: 901019264}
   m_Layer: 0
   m_Name: Target
   m_TagString: Weakness
@@ -4655,8 +4823,8 @@ GameObject:
   - component: {fileID: 943968761}
   - component: {fileID: 943968760}
   - component: {fileID: 943968759}
-  - component: {fileID: 943968758}
   - component: {fileID: 943968764}
+  - component: {fileID: 943968758}
   m_Layer: 0
   m_Name: Target
   m_TagString: Weakness
@@ -5096,6 +5264,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1002276927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: FinalBossScene_LMA4
+  m_EditorClassIdentifier: 
+  resolution: 512
+  bitmask: 1
+  id: 1
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1002606683
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,33 +5701,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1051822796}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1074209772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: FinalBossScene_LMA2
-  m_EditorClassIdentifier: 
-  resolution: 512
-  bitmask: 1
-  id: 5
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1084662858
 GameObject:
   m_ObjectHideFlags: 0
@@ -5686,6 +5854,11 @@ Prefab:
       propertyPath: bulletCapacity
       value: 
       objectReference: {fileID: 1354492137}
+    - target: {fileID: 20163839457336856, guid: dbde25794923f7741b799f6abf9a6751,
+        type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 51255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbde25794923f7741b799f6abf9a6751, type: 2}
   m_IsPrefabAsset: 0
@@ -5727,6 +5900,11 @@ Prefab:
     - target: {fileID: 4975549132647632, guid: 9db88cb807abf84419e16981077793b2, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114939638385839182, guid: 9db88cb807abf84419e16981077793b2,
+        type: 2}
+      propertyPath: spawnInterval
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9db88cb807abf84419e16981077793b2, type: 2}
@@ -5854,33 +6032,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1092476857}
   m_CullTransparentMesh: 0
---- !u!114 &1113347686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: FinalBossScene_LMA5
-  m_EditorClassIdentifier: 
-  resolution: 256
-  bitmask: 1
-  id: 2
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1182752080
 GameObject:
   m_ObjectHideFlags: 0
@@ -6547,33 +6698,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1521373072060912, guid: dbde25794923f7741b799f6abf9a6751,
     type: 2}
   m_PrefabInternal: {fileID: 1085947630}
---- !u!114 &1369651228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: FinalBossScene_LMA1
-  m_EditorClassIdentifier: 
-  resolution: 2048
-  bitmask: 1
-  id: 4
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1412275767
 GameObject:
   m_ObjectHideFlags: 0
@@ -6744,33 +6868,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414032205}
   m_CullTransparentMesh: 0
---- !u!114 &1425539107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: FinalBossScene_LMA3
-  m_EditorClassIdentifier: 
-  resolution: 512
-  bitmask: 1
-  id: 0
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1441042148
 GameObject:
   m_ObjectHideFlags: 0
@@ -7040,8 +7137,8 @@ GameObject:
   - component: {fileID: 1551895438}
   - component: {fileID: 1551895437}
   - component: {fileID: 1551895436}
-  - component: {fileID: 1551895435}
   - component: {fileID: 1551895441}
+  - component: {fileID: 1551895435}
   m_Layer: 0
   m_Name: Target
   m_TagString: Weakness
@@ -7513,33 +7610,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 121.772705, y: 102.35167, z: 101.00458}
   m_Center: {x: 0.09588623, y: 51.056816, z: -0.09316826}
---- !u!114 &1623761644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: FinalBossScene_LM0
-  m_EditorClassIdentifier: 
-  resolution: 4096
-  bitmask: 1
-  id: 3
-  isImplicit: 1
-  area: 58147.68
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1638263981
 GameObject:
   m_ObjectHideFlags: 0
@@ -8128,6 +8198,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1702816037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702816038}
+  m_Layer: 0
+  m_Name: AttackSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1702816038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702816037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 226, z: 42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2138429924}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1717239169
 GameObject:
   m_ObjectHideFlags: 0
@@ -8138,7 +8237,7 @@ GameObject:
   - component: {fileID: 1717239172}
   - component: {fileID: 1717239171}
   - component: {fileID: 1717239170}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8200,6 +8299,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1731861510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: FinalBossScene_LMA3
+  m_EditorClassIdentifier: 
+  resolution: 512
+  bitmask: 1
+  id: 0
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1775027951
 GameObject:
   m_ObjectHideFlags: 0
@@ -8573,9 +8699,12 @@ MonoBehaviour:
   explosionRadius: 20
   backgroundMusic: {fileID: 634994537}
   victoryMusic: {fileID: 8300000, guid: 6b3e80c8d54a4d445a59b081b892d10c, type: 3}
-  victoryJingle: {fileID: 8300000, guid: c10d01fa6a9e2d048a4d51962838140b, type: 3}
   SpawnPoint: {fileID: 665876429}
   VictoryBoard: {fileID: 1084662858}
+  metalBarSpawner: {fileID: 1702816037}
+  metalBarAttack: {fileID: 1150458192383816, guid: 543d3bc47447ff84c8696bad4676d533,
+    type: 2}
+  metalBarAttackInterval: 15
 --- !u!82 &1888937821
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8671,6 +8800,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1890334322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: FinalBossScene_LMA1
+  m_EditorClassIdentifier: 
+  resolution: 2048
+  bitmask: 1
+  id: 4
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1936749086
 GameObject:
   m_ObjectHideFlags: 0
@@ -9185,3 +9341,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 121.772736, y: 102.35167, z: 101.0046}
   m_Center: {x: 0.09588625, y: 51.056816, z: -0.09341242}
+--- !u!4 &2138429924 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399321068982098, guid: 543d3bc47447ff84c8696bad4676d533,
+    type: 2}
+  m_PrefabInternal: {fileID: 375509072}
