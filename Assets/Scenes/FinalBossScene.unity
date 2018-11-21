@@ -1287,6 +1287,7 @@ MonoBehaviour:
     type: 2}
   dustExplosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 2}
+  sandExplosion: {fileID: 0}
   hp: 200
 --- !u!23 &210387714
 MeshRenderer:
@@ -2789,6 +2790,7 @@ MonoBehaviour:
     type: 2}
   dustExplosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 2}
+  sandExplosion: {fileID: 0}
   hp: 200
 --- !u!64 &590327764
 MeshCollider:
@@ -4530,6 +4532,7 @@ MonoBehaviour:
     type: 2}
   dustExplosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 2}
+  sandExplosion: {fileID: 0}
   hp: 200
 --- !u!64 &901019264
 MeshCollider:
@@ -4963,6 +4966,7 @@ MonoBehaviour:
     type: 2}
   dustExplosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 2}
+  sandExplosion: {fileID: 0}
   hp: 200
 --- !u!23 &943968762
 MeshRenderer:
@@ -5806,21 +5810,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: hpBar
-      value: 
-      objectReference: {fileID: 238866695}
-    - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: GameoverScreen
-      value: 
-      objectReference: {fileID: 140787173}
-    - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
-        type: 2}
-      propertyPath: spawnPoint
-      value: 
-      objectReference: {fileID: 665876429}
     - target: {fileID: 114748527332448014, guid: dbde25794923f7741b799f6abf9a6751,
         type: 2}
       propertyPath: cartridgeCapacity
@@ -5836,11 +5825,21 @@ Prefab:
       propertyPath: bulletCapacity
       value: 
       objectReference: {fileID: 1354492137}
-    - target: {fileID: 114672796031504120, guid: dbde25794923f7741b799f6abf9a6751,
+    - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
         type: 2}
-      propertyPath: damage
-      value: 100
-      objectReference: {fileID: 0}
+      propertyPath: hpBar
+      value: 
+      objectReference: {fileID: 238866695}
+    - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
+        type: 2}
+      propertyPath: GameoverScreen
+      value: 
+      objectReference: {fileID: 140787173}
+    - target: {fileID: 114115220767868834, guid: dbde25794923f7741b799f6abf9a6751,
+        type: 2}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 665876429}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbde25794923f7741b799f6abf9a6751, type: 2}
   m_IsPrefabAsset: 0
@@ -7277,6 +7276,7 @@ MonoBehaviour:
     type: 2}
   dustExplosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 2}
+  sandExplosion: {fileID: 0}
   hp: 200
 --- !u!23 &1551895439
 MeshRenderer:
