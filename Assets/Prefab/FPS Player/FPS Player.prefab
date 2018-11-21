@@ -8898,7 +8898,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.519
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8993,7 +8993,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.629
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9088,7 +9088,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.222
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9480,7 +9480,6 @@ MonoBehaviour:
   cartridge: 40
   damage: 30
   fireRate: 15
-  bulletLeft: 0
   bulletCapacity: 700
   reloadTime: 3.5
 --- !u!114 &114449780711535352
@@ -9531,9 +9530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cartridge: 15
-  damage: 60
+  damage: 100
   fireRate: 2
-  bulletLeft: 0
   bulletCapacity: 360
   reloadTime: 1.8
 --- !u!114 &114748527332448014
@@ -9615,9 +9613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cartridge: 30
-  damage: 40
-  fireRate: 10
-  bulletLeft: 0
+  damage: 45
+  fireRate: 8
   bulletCapacity: 480
   reloadTime: 2.8
 --- !u!136 &136798751920790020
