@@ -54,6 +54,7 @@
         </e>
         <e p="BossInformation.cs" t="Include" />
         <e p="BossMove.cs" t="Include" />
+        <e p="CameraZoomer.cs" t="Include" />
         <e p="Editor" t="Include">
           <e p="PackageManagerAssembly" t="Include">
             <e p="PackageImportList.txt" t="Include" />
@@ -316,6 +317,7 @@
             </e>
           </e>
         </e>
+        <e p="RotateMetalBarRandom.cs" t="Include" />
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
