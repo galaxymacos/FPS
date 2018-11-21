@@ -7,7 +7,7 @@ public class FPSWeapon : MonoBehaviour {
 	public int cartridge;
 	[SerializeField] internal float damage;
 	[SerializeField] internal float fireRate;
-	public int bulletLeft;
+	internal int bulletLeft;
 	private GameObject muzzleFlash;
 	internal int maxBulletCapacity;
 	[SerializeField] internal int bulletCapacity;

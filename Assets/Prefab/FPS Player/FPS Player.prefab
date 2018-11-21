@@ -1644,6 +1644,7 @@ GameObject:
   - component: {fileID: 114100611116018608}
   - component: {fileID: 114312835999449302}
   - component: {fileID: 114900732774275532}
+  - component: {fileID: 114449780711535352}
   m_Layer: 0
   m_Name: FPS Camera
   m_TagString: Untagged
@@ -8518,7 +8519,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2103
+    m_Bits: 51255
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -9482,6 +9483,19 @@ MonoBehaviour:
   bulletLeft: 0
   bulletCapacity: 700
   reloadTime: 3.5
+--- !u!114 &114449780711535352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1360821794741638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a928e1417dca5c4a914161f0c988712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomValue: 30
+  zoomSpeed: 5
 --- !u!114 &114461690747869562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9518,7 +9532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cartridge: 15
   damage: 60
-  fireRate: 3
+  fireRate: 2
   bulletLeft: 0
   bulletCapacity: 360
   reloadTime: 1.8

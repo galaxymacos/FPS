@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyTarget : MonoBehaviour {
     [SerializeField] private GameObject flameEffect;
     [SerializeField] private GameObject dustExplosionEffect;
+    [SerializeField] private AudioClip sandExplosion;
     private AudioSource _audioSource;
     [SerializeField] private float hp = 200f;
 
@@ -47,6 +48,11 @@ public class EnemyTarget : MonoBehaviour {
         }
         Instantiate(dustExplosionEffect, transform.position, Quaternion.identity);
         Instantiate(flameEffect, transform.position+new Vector3(0,-1,0), Quaternion.identity);    // To put the fire on the ground
+        StartCoroutine(DestroyObject());
+    }
+
+    IEnumerator DestroyObject() {
+        yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }
 }

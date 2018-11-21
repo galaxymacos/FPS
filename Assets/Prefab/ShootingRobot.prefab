@@ -321,6 +321,7 @@ MonoBehaviour:
     type: 2}
   dustExplosionEffect: {fileID: 1025285306637258, guid: d8f0099df63275647a8bcf646df1ca00,
     type: 2}
+  sandExplosion: {fileID: 8300000, guid: 767bf9e9e441854428ca28be95684d25, type: 3}
   hp: 200
 --- !u!136 &136005355121686872
 CapsuleCollider:

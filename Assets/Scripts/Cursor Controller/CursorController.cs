@@ -17,6 +17,7 @@ public class CursorController : MonoBehaviour {
     void ControlCursor() {
 	    if (Input.GetKeyDown(KeyCode.Tab)) {
 		    Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+		    Cursor.visible = Cursor.lockState != CursorLockMode.Locked;
 	    }
     }
 }

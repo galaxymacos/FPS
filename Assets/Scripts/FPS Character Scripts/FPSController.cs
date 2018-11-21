@@ -56,7 +56,7 @@ public class FPSController : MonoBehaviour {
 
     [SerializeField] private WeaponManager weaponManager;
     internal FPSWeapon currentWeapon;
-    private float fireRate = 15f;
+    private float fireRate;
     private float nextTimeToFire = 0f;
     [SerializeField] private WeaponManager handsWeaponManager;
     internal FPSHandsWeapon currentHandsWeapon;
@@ -87,6 +87,7 @@ public class FPSController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        fireRate = currentWeapon.fireRate;
         PlayerMovement();
         SelectWeapon();
 
